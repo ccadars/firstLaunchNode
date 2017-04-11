@@ -1,0 +1,22 @@
+{
+  "name": "firstlaunchnode",
+  "version": "0.1.1",
+  "description": "initiation to node.js",
+  "main": "serveur.js",
+  "scripts": {
+    "test": "node serveur.js"
+  },
+  "dependencies":{
+    "express": "4.13.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccadars/firstLaunchNode"
+  },
+  "author": "ccadars",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccadars/firstLaunchNode/issues"
+  },
+  "homepage": "https://github.com/ccadars/firstLaunchNode#readme"
+}
