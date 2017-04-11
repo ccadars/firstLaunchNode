@@ -1,15 +1,13 @@
-const http = require ('http');
-const hostname = '127.0.0.1';
-const port = 12107;
+var express = require('express');
+var appli = express();
 
-const serveur = http.createServer(
-  function(request,response) {
-    response.statusCode = 200;
-    response.setHeader('Content-Type','text/plain');
-    response.end('Je suis beaucoup plus lent que Paul');
-  }
+appli.get(
+	'/',
+	function(request,response){
+		response.send('Hello world');
+	}
 );
 
-serveur.listen(port,hostname,function(){
-  console.log('Le serveur écoute là-bas : ' + hostname + " : " + port);
+appli.listen(12107, function(){
+	console.log("Pour péter dans la doc il faut de l'Heroku");
 });
